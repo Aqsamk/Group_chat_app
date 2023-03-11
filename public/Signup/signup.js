@@ -13,11 +13,11 @@ async function signup(e) {
         "http://localhost:3000/user/signup",
         signupDetails
       );
-    //   if (response.status === 201) {
-    //     window.location.href = "../Login/login.html";
-    //   } else {
-    //     throw new Error("Failed to login");
-    //   }
+      if (response.status === 201) {
+        window.location.href = "../Login/login.html";
+      } else {
+        throw new Error("Failed to login");
+      }
     } catch (err) {
       document.body.innerHTML += `<div style="color:red;">${err} </div>`;
     }
