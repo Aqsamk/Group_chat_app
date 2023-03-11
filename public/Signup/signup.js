@@ -20,5 +20,6 @@ async function signup(e) {
       }
     } catch (err) {
       document.body.innerHTML += `<div style="color:red;">${err} </div>`;
+      console.log(err)
     }
 }
